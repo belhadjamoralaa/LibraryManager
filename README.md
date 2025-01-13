@@ -93,8 +93,7 @@ Découplage entre la librairie et les clients
 
 
 Comment:
-
-javaCopypublic void notifierClients(String message) {
+public void notifierClients(String message) {
     for (int i = 0; i < nombreClients; i++) {
         clients[i].notifier(message);
     }
