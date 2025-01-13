@@ -54,8 +54,7 @@ Accès global à la gestion de la librairie
 
 
 Comment:
-
-javaCopyprivate static LibrairieManager instance;
+ static LibrairieManager instance;
 public static LibrairieManager getInstance() {
     if (instance == null) {
         instance = new LibrairieManager();
@@ -74,7 +73,7 @@ Facilite l'ajout de nouvelles promotions
 
 Comment:
 
-javaCopypublic interface PromoStrategy {
+ interface PromoStrategy {
     double calculerPromo(double prix);
 }
 
